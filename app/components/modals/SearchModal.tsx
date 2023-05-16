@@ -127,6 +127,7 @@ const SearchModal = () => {
                 setLocation(value as CountrySelectValue)} 
             />
             <hr />
+            {/* @ts-ignore */}
             <Map center={location?.latlng} />
         </div>
     )
