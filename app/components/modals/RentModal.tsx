@@ -24,7 +24,6 @@ enum STEPS {
     DESCRIPTION = 4,
     PRICE = 5,
   }
-
 const RentModal = () => {
     const rentModal = useRentModal()
     const router = useRouter()
@@ -165,6 +164,7 @@ const RentModal = () => {
                     value={location}
                     onChange={(value) => setCustomValue('location', value)} 
                 />
+                {/* @ts-ignore */}
                 <Map center={location?.latlng}/>
             </div>
         )
