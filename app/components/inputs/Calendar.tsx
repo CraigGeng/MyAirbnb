@@ -22,7 +22,6 @@ const DatePicker: React.FC<DatePickerProps> = ({
     disabledDates
 }) => {
     return ( 
-        // @ts-ignore
         <DateRange
             rangeColors={['#262626']}
             ranges={[value]}
